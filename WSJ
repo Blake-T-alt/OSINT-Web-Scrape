@@ -1,0 +1,9 @@
+#This file is a webscrape test run from WSJ Search function
+#Resource: https://www.secjuice.com/osint-scraping-deep-web-databases-with-python/
+#"search_keywords": "ethereum merge"
+
+# Basic_Scraper
+import requests
+params = {'search_keywords': 'ethereum merge'}
+r = requests.post("https://www.wsj.com/", data=params)
+print(r.text)
