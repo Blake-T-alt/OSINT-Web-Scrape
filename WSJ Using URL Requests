@@ -1,0 +1,5 @@
+import requests
+name = 'smith'
+url = f"https://www.miamidade.gov/Apps/PA/PApublicServiceProxy/PaServicesProxy.ashx?Operation=GetOwners&clientAppName=PropertySearch&enPoint=&from=1&ownerName={name}&to=200"
+r = requests.post(url)
+print(r.text)
